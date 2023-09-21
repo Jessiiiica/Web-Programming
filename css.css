@@ -1,0 +1,23 @@
+h1{
+    text-align: centre;
+    color: #156E5F
+}
+
+#button {
+    background-color: white;
+    color:#156E5F;
+
+}
+
+#button:hover{
+    background-color: rgb(44, 208, 208);
+}
+
+#button:active{
+    background-color: bisque;
+}
+
+#button:focus-visible {
+    box-shadow: 0 0 0 2px white 0 0 0 5px #156E5F;
+    outline: none;
+}
