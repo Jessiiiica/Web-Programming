@@ -1,11 +1,7 @@
-const button =
-document.querySelector('#button');
+const button = document.querySelector('#button');
 
-button.addEventListener('click', () => {
-    button.innerText = 'Button Clicked';
+button.addEventListener("click", buttonClicked());
 
-    window.setTimeout(() => {
-        button.innerText = 'Click me!';
-    }, 2000);
-
-});
+function buttonClicked(){
+    button.innerText = 'Button Clicked!';
+}
