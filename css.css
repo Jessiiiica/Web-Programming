@@ -1,7 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f5f8ff;
+}
+
+
 h1{
     text-align: centre;
     color: #156E5F
 }
+
+p2 {text-align: center;}
 
 #button {
     background-color: white;
@@ -21,3 +34,75 @@ h1{
     box-shadow: 0 0 0 2px white 0 0 0 5px #156E5F;
     outline: none;
 }
+
+#cookiePopup {
+    background-color: #ffffff;
+    position: absolute;
+    font-size: 14px;
+    width: 70vw;
+    max-width: 42.85em;
+    box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+    font-family: "Poppings", sans-serif;
+    text-align: justify;
+    line-height: 1.8em;
+    padding: 2em 1.4em;
+    border-radius: 6px;
+    transition: all 0.5s ease-in;
+}
+
+#cookiePopup img{
+    display: block;
+    width: 3.75em;
+    transform: translateZ(0);
+    position: relative;
+    margin: auto;
+}
+
+#cookiePopup p{
+    text-align: centre;
+    margin: 1.4em 0;
+}
+
+#cookiePopup button{
+    background-color: #6859fe;
+    border: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: 1em 1.4em;
+    display: block;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#cookiePopup a{
+    color: #6859fe;
+}
+
+.hideCookie{
+    visibility: hidden;
+    bottom: 0;
+    right: 2em;
+}
+
+.showCookie{
+    visibility: visible;
+    bottom: 2em;
+    right: 2em;
+}
+
+@media only screen and (max-width: 37.5em){
+    #cookiePopup{
+        width: 100%;
+    }
+
+    .hide {
+        bottom: 2em;
+        right: 0;
+    }
+
+    .show {
+        right: 0;
+        bottom: 0;
+    }
+    }
