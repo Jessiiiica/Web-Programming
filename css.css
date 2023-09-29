@@ -14,8 +14,6 @@ h1{
     color: #156E5F
 }
 
-p2 {text-align: center;}
-
 #button {
     background-color: white;
     color:#156E5F;
@@ -35,7 +33,9 @@ p2 {text-align: center;}
     outline: none;
 }
 
+/*Cookie CSS*/
 #cookiePopup {
+    visibility: visible;
     background-color: #ffffff;
     position: absolute;
     font-size: 14px;
@@ -43,7 +43,7 @@ p2 {text-align: center;}
     max-width: 42.85em;
     box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
     font-family: "Poppings", sans-serif;
-    text-align: justify;
+    text-align: center;
     line-height: 1.8em;
     padding: 2em 1.4em;
     border-radius: 6px;
@@ -75,34 +75,22 @@ p2 {text-align: center;}
     border-radius: 5px;
 }
 
+#cookiePopup button:hover{
+    background-color: #6759fedb;
+}
+
 #cookiePopup a{
     color: #6859fe;
 }
 
-.hideCookie{
-    visibility: hidden;
-    bottom: 0;
-    right: 2em;
-}
-
-.showCookie{
+.show {
     visibility: visible;
     bottom: 2em;
-    right: 2em;
-}
+  }
 
-@media only screen and (max-width: 37.5em){
-    #cookiePopup{
-        width: 100%;
-    }
+.hide {
+    visibility: hidden;
+    bottom: 0;
+  }
 
-    .hide {
-        bottom: 2em;
-        right: 0;
-    }
 
-    .show {
-        right: 0;
-        bottom: 0;
-    }
-    }
