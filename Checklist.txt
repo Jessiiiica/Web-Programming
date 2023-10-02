@@ -1,10 +1,10 @@
 Account Setup:
 -Complete 18/09/2023- Demonstrates the ability to create a GitHub account (and a repository).
 -Complete 18/09/2023- Add a README
-Add/remove various files/folders (.jpg, .gif, .png, .txt, .html).
+-Complete 26/09/2023- Add/remove various files/folders (.jpg, .gif, .png, .txt, .html). 
 Repository Basics:
 -Complete 18/09/2023- Can create a new repository on GitHub.
-Understands the purpose of a README file.
+-Complete 02/10/2023- Understands the purpose of a README file.
 Knows how to initialize a repository with a README.
 Can describe the importance of .gitignore files.
 Cloning and Forking:
@@ -18,7 +18,7 @@ Can switch between branches.
 Can merge branches using pull requests.
 Commits:
 -Complete 21/09/2023- Can make and commit changes to a repository.
-Understands the importance of clear and descriptive commit messages.
+-Complete 21/09/2023- Understands the importance of clear and descriptive commit messages.
 Knows how to undo changes (revert back to older version).
 Pull Requests:
 Can create a pull request to propose changes.

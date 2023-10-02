@@ -11,21 +11,21 @@ body{
 
 h1{
     text-align: centre;
-    color: #156E5F
+    color: #6859fe
 }
 
 #button {
-    background-color: white;
-    color:#156E5F;
+    background-color:#6859fe;
+    color:white;
 
 }
 
 #button:hover{
-    background-color: rgb(44, 208, 208);
+    background-color: #6759fedb;
 }
 
 #button:active{
-    background-color: bisque;
+    background-color: #6759feaf;
 }
 
 #button:focus-visible {
