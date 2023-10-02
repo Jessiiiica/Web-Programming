@@ -48,6 +48,7 @@ h1{
     padding: 2em 1.4em;
     border-radius: 6px;
     transition: all 0.5s ease-in;
+    bottom: 0;
 }
 
 #cookiePopup img{
@@ -83,14 +84,5 @@ h1{
     color: #6859fe;
 }
 
-.show {
-    visibility: visible;
-    bottom: 2em;
-  }
-
-.hide {
-    visibility: hidden;
-    bottom: 0;
-  }
 
 
