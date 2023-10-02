@@ -3,7 +3,5 @@ function buttonClicked(){
 };
 
 function cookieClicked(){
-    const cookieButton = document.getElementById('acceptCookie').innerHTML = 'Clicked!'
-    cookiePopup.classList.add("hide");
-    cookiePopup.classList.remove("show");
-}   
+    document.getElementById("cookiePopup").style.display = 'none';
+    }
