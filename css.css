@@ -33,6 +33,7 @@ h1{
     outline: none;
 }
 
+
 /*Cookie CSS*/
 #cookiePopup {
     visibility: visible;
@@ -165,5 +166,30 @@ img {vertical-align: middle;}
 
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+.topnav{
+  background-color: #3f36a2;
+  overflow:hidden
+}
+
+.topnav a{
+  float:left;
+  color:#ffffffa0; 
+  text-align: center;
+  padding:14px 16px;
+  text-decoration: none;
+  font-size:17px;
+  border-right: 1px solid #bbb
+}
+
+.topnav a:hover{
+  background-color:#6759fedb ;
+  color:rgb(255, 255, 255);
+}
+
+.topnav a.active {
+  background-color: #6759fedb;
+  color: white;
 }
 
