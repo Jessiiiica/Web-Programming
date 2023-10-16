@@ -69,7 +69,33 @@
             <p>I'm figuring this out &#128516</p>
             <button id="button" onclick="buttonClicked()">Click me!</button>
             <script src="java.js"></script>
-    
+
+            <div class="container">
+              <form action = "action_page.php">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstname" placeholder="Your name...">
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastname" placeholder="Your last name...">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email...">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="scotland">Scotland</option>
+                  <option value="england">England</option>
+                  <option value="wales">Wales</option>
+                  <option value="northernIreland">Northern Ireland</option>
+                  <option value="outside">Outside of UK</option>
+                </select>
+
+                <label for="Contents">Contents</label>
+                <textarea id="contents" name="contents" placeholder="Please write your message here...." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+              </form>
+            </div>
 
         </body>
 

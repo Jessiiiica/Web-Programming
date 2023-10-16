@@ -14,13 +14,13 @@ h1{
     color: #6859fe
 }
 
-#button {
+#button put[type=submit]{
     background-color:#6859fe;
     color:white;
 
 }
 
-#button:hover{
+#button:hover, input[type=submit]:hover{
     background-color: #6759fedb;
 }
 
@@ -32,7 +32,6 @@ h1{
     box-shadow: 0 0 0 2px white 0 0 0 5px #156E5F;
     outline: none;
 }
-
 
 /*Cookie CSS*/
 #cookiePopup {
@@ -65,7 +64,7 @@ h1{
     margin: 1.4em 0;
 }
 
-#cookiePopup button{
+#cookiePopup button, input[type=submit]{
     background-color: #6859fe;
     border: none;
     color: #ffffff;
@@ -193,3 +192,19 @@ img {vertical-align: middle;}
   color: white;
 }
 
+/*Contact Form*/
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
