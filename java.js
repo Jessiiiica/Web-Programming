@@ -33,3 +33,49 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
 
 }
+
+let saveFile =() => {
+    const name = document.getElementById("firstName");
+    const lastName = document.getElementById("lastName");
+    const email = document.getElementById("email");
+    const country = document.getElementById("country");
+    const message = document.getElementById("contents");
+
+    let data = "\r Name: " + name.value 
+    + " \r\n " + "Age: " + lastName.value 
+    + " \r\n " + "Email: " + email.value 
+    + " \r\n " + "Country: " + country.value 
+    + " \r\n " + "Contents: " + message.value;
+
+    console.log(data);
+
+    const textToBLOB = new Blob([data], { type: "text/plain" });
+            var filename = new Date();
+            var month =new Date(); 
+
+            month = month.getMonth();
+
+            var day = new Date();
+            var day = day.getUTCDate();
+
+            var year = new Date();
+            var year = year.getUTCFullYear();
+
+            newdate = year + "/" + month + "/" + day;
+            const sFileName = filename;
+
+            let newLink = document.createElement("a");
+            newLink.download = new Date();
+
+            if(window.webkitURL != null){
+                newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+            }
+            else{
+                newLink.href = window.URL.createObjectURL(textToBLOB);
+                newLink.style.display = "none";
+
+                document.body.appendChild(newLink);
+            }
+
+            newLink.click();
+}

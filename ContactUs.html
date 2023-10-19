@@ -10,14 +10,13 @@
         <meta name ="viewport" content="width=device-width, inital-scale=1.0"/>
     </head>
 
-    <body onload ="showSlides(1)">
         <h1>My Website</h1>
 
         <div class="topnav">
-          <a class="active" href="index.html">Home</a>
+          <a class="#Home" href="index.html">Home</a>
           <a class="#ReplaceMe1">Replace 1</a>
           <a class="#ReplaceMe2">Replace 2</a>
-          <a class="#ContactUs" href="ContactUs.html">Contact Us</a>
+          <a class="active" href="ContactUs.html">Contact Us</a>
         </div>
 
         <script src="java.js"></script>
@@ -45,7 +44,7 @@
               <label for="Contents">Contents</label>
               <textarea id="contents" name="contents" placeholder="Please write your message here...." style="height:200px"></textarea>
 
-              <input type="submit" value="Submit">
+              <input type="button" id="bt" value="Submit" onclick="saveFile()">
             </form>
           </div>
     </body>
