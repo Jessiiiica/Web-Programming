@@ -4,12 +4,8 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: #f5f8ff;
-}
 
-
-h1{
+h1, h2{
     text-align: centre;
     color: #6859fe
 }
