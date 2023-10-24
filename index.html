@@ -18,8 +18,8 @@
         <div class="topnav">
           <a class="active" href="index.html">Home</a>
           <a class="#ReplaceMe1">Replace 1</a>
-          <a class="#ReplaceMe2">Replace 2</a>
           <a class="#ContactUS" href="ContactUs.html">Contact Us</a>
+          <a class="#Settings" href="Settings.html">Settings</a>
         </div>
 
         <div id="cookiePopup" class="hide">
@@ -67,13 +67,15 @@
 
             <p>I'm figuring this out &#128516</p>
             <button id="button" onclick="buttonClicked()">Click me!</button>
+            <p></p>
+            <br>
             <script src="java.js"></script>
             
           
             <h2>Select the website colours!</h2>
             <br>
             <p>Background Colour:</p>
-            <select name="clr" onchange="document.bgColor=this.options[this.selectedIndex].value" size="1">
+            <select name="colour" onchange="document.bgColor=this.options[this.selectedIndex].value" size="1">
             <br>
               <option value="white">White</option>
                 <option value="Black">Black
@@ -83,7 +85,7 @@
           
           <br>
           <p>Text Colour:</p>
-          <select name="clr" onchange="document.fgColor=this.options[this.selectedIndex].value" size="1">
+          <select name="colour" onchange="document.fgColor=this.options[this.selectedIndex].value" size="1">
               <br>
               <option value="black">Black
                   <option value="grey">Grey
