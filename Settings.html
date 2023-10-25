@@ -10,6 +10,8 @@
         <meta name ="viewport" content="width=device-width, inital-scale=1.0"/>
     </head>
 
+    <body>
+
         <h1>My Website</h1>
 
         <div class="topnav">
@@ -19,7 +21,29 @@
           <a class="active" href="Settings.html">Settings</a>
         </div>
 
-        <script src="java.js"></script>
+        <div class ="settings" id="settings">
+            <br>
+            <h2>Profile Settings</h2>
+            <img src ="C:\Users\jessp\Documents\GitHub\Web-Programming\Images\Profile Pic.jpg" width="130px">
+            <br>
+            <a href="#" class="btn" style="color:#8f9096; font-weight:600">Edit Picture</a>
+            <br>
+            <label for="fullName">Full Name</label>
+            <input type="text" class="form-control" id="fullName">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email">
+            <br>
+            <label for="pass">Password</label>
+            <input type="password" class="form-control" id="pass">
+            <br>
+            <label for="birthday">Birthday</label>
+            <input type="date" class="form-control" id="birthday">
+            <br>
+            <button type="button" class="btn btn-primary btn-block">Save Changes</button>
+        </div>
 
+        <script src="java.js"></script>
+        
     </body>
 </html>
