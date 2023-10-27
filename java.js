@@ -70,3 +70,19 @@ let saveFile = () => {
 
     newLink.click();
 };
+
+function settingsSaveButton(){
+    document.getElementById('btn').innerHTML = ('Saved');
+
+    const fs = require('fs');
+    let name = "Jess";
+    fs.writeFile("fullName", name, (err) => {
+      if (err){
+        console.log(err);
+      }
+      else {
+        console.log("Saved");
+        document.getElementById('btn').innerHTML = name;
+      }
+    })
+}
