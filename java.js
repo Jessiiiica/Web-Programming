@@ -82,8 +82,18 @@ function settingsSaveButton(){
       localStorage.setItem("password", document.getElementById('pass').value)
 
       localStorage.setItem("birthday", document.getElementById('birthday').value)
+
+
     }
     else{
       document.getElementById("btn").innerHTML = "Sorry, this feature is not supported on your browser";
     }
+}
+
+function updateSettings(){
+  document.getElementById('fullName').value = localStorage.getItem('fullName');
+  document.getElementById('email').value = localStorage.getItem('email');
+  document.getElementById('password').value = localStorage.getItem('pass');
+  document.getElementById('birthday').value = localStorage.getItem('birthday');
+  
 }
