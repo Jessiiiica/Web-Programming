@@ -74,15 +74,16 @@ let saveFile = () => {
 function settingsSaveButton(){
     document.getElementById('btn').innerHTML = ('Saved');
 
-    const fs = require('fs');
-    let name = "Jess";
-    fs.writeFile("fullName", name, (err) => {
-      if (err){
-        console.log(err);
-      }
-      else {
-        console.log("Saved");
-        document.getElementById('btn').innerHTML = name;
-      }
-    })
+    if(typeof(Storage) !== "undefined"){
+      localStorage.setItem("fullName", document.getElementById('fullName').value)
+      
+      localStorage.setItem("email", document.getElementById('email').value)
+      
+      localStorage.setItem("password", document.getElementById('pass').value)
+
+      localStorage.setItem("birthday", document.getElementById('birthday').value)
+    }
+    else{
+      document.getElementById("btn").innerHTML = "Sorry, this feature is not supported on your browser";
+    }
 }
