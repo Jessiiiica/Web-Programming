@@ -93,7 +93,7 @@ function settingsSaveButton(){
 function updateSettings(){
   document.getElementById('fullName').value = localStorage.getItem('fullName');
   document.getElementById('email').value = localStorage.getItem('email');
-  document.getElementById('password').value = localStorage.getItem('pass');
+  document.getElementById('pass').value = localStorage.getItem('password');
   document.getElementById('birthday').value = localStorage.getItem('birthday');
   
 }
