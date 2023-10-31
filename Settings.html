@@ -47,7 +47,7 @@
         <h2>Select the website colours!</h2>
         <br>
         <p>Background Colour:</p>
-        <select name="colour" onchange="document.bgColor=this.options[this.selectedIndex].value" size="1">
+        <select name="colour" onchange="bgColourChange(this.options[this.selectedIndex].value)" size="1">
         <br>
           <option value="white">White</option>
             <option value="Black">Black
@@ -57,7 +57,7 @@
       
       <br>
       <p>Text Colour:</p>
-      <select name="colour" onchange="document.fgColor=this.options[this.selectedIndex].value" size="1">
+      <select name="colour" id="textColour" onchange="textColourChange(this.options[this.selectedIndex].value)" size="1">
           <br>
           <option value="black">Black
               <option value="grey">Grey

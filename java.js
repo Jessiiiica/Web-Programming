@@ -18,6 +18,9 @@ function currentSlide(n) {
 }
     
 function showSlides(n) {
+  document.body.style.color = localStorage.getItem('textColour');
+  document.body.style.backgroundColor = localStorage.getItem('bgColour')
+
     let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
@@ -90,10 +93,34 @@ function settingsSaveButton(){
     }
 }
 
+function updateContactUs(){
+  document.body.style.color = localStorage.getItem('textColour');
+  document.body.style.backgroundColor = localStorage.getItem('bgColour')
+}
+
+
 function updateSettings(){
   document.getElementById('fullName').value = localStorage.getItem('fullName');
   document.getElementById('email').value = localStorage.getItem('email');
   document.getElementById('pass').value = localStorage.getItem('password');
   document.getElementById('birthday').value = localStorage.getItem('birthday');
-  
+
+  document.body.style.color = localStorage.getItem('textColour');
+  document.body.style.backgroundColor = localStorage.getItem('bgColour')
+}
+
+function bgColourChange(colour){
+  document.body.style.backgroundColor = colour
+  if(typeof(Storage) !== "undefined"){
+    localStorage.setItem("bgColour", colour)
+    localStorage.setItem("bgColourName", document.getElementsByName(colour.selectedIndex));
+    document.getElementById("btn").innerHTML = localStorage.getItem("bgColourName");
+  }
+}
+
+function textColourChange(colour){
+  document.body.style.color = colour;
+  if(typeof(Storage) !== "undefined"){
+    localStorage.setItem("textColour", colour)
+  }
 }
